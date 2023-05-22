@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IRANSans";   
+  src: local("IRANSans(FaNum)_Regular"),
+    url("./fonts/IRANSans\(FaNum\)_Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  background: "#f3f3f3";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f3f3f3;
+  margin: 0;
+  font-family: "IRANSans";
+  direction: rtl;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

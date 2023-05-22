@@ -1,0 +1,1975 @@
+{
+    "searchId": 93564301,
+    "pricedItineraries": [
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Online",
+            "validatingAirlineCode": "ZV",
+            "fareSourceCode": "39653734366430643664343034353538616437323732393261666665343066372631373526353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 12957000,
+                    "grandTotalWithoutDiscount": 12957000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 1269000,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 11688000,
+                            "totalFare": 12957000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 1269000,
+                            "vat": 0,
+                            "baseFareWithMarkup": 11688000,
+                            "totalFareWithMarkupAndVat": 12957000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 115,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T17:30:00",
+                            "arrivalDateTime": "2023-02-28T19:25:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "ZV4071",
+                            "resBookDesigCode": "Q",
+                            "journeyDuration": "01:55",
+                            "journeyDurationPerMinute": 115,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "ZV",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "ZV",
+                                "flightNumber": "4071",
+                                "equipment": "MD8",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 8,
+                            "isCharter": false,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 0,
+            "isCharter": false,
+            "isSystem": true,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "FP0",
+            "fareSourceCode": "64636137633634373462636534323935616161383464313233356335663336362632333426353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13075000,
+                    "grandTotalWithoutDiscount": 13075000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": -675000
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13750000,
+                            "totalFare": 13075000,
+                            "serviceTax": -675000,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13750000,
+                            "totalFareWithMarkupAndVat": 13075000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 140,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T21:30:00",
+                            "arrivalDateTime": "2023-02-28T23:50:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "FP07418",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "02:20",
+                            "journeyDurationPerMinute": 140,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "FP0",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "FP0",
+                                "flightNumber": null,
+                                "equipment": null,
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 5,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 1,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Online",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "39633564636531656237313334646239623139343064363264313735383336392632343126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13102360,
+                    "grandTotalWithoutDiscount": 13102360,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 1327000,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 11775360,
+                            "totalFare": 13102360,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 1327000,
+                            "vat": 0,
+                            "baseFareWithMarkup": 11775360,
+                            "totalFareWithMarkupAndVat": 13102360
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T10:00:00",
+                            "arrivalDateTime": "2023-02-28T11:45:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97057",
+                            "resBookDesigCode": "RR",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7057",
+                                "equipment": "100",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 1,
+                            "isCharter": false,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 2,
+            "isCharter": false,
+            "isSystem": true,
+            "isInstance": false,
+            "isOffer": true
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "I3",
+            "fareSourceCode": "65356663373932353832353234636362613864663061336166623965343733632631343126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13160500,
+                    "grandTotalWithoutDiscount": 13160500,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": -679500
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13840000,
+                            "totalFare": 13160500,
+                            "serviceTax": -679500,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13840000,
+                            "totalFareWithMarkupAndVat": 13160500
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 90,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T18:50:00",
+                            "arrivalDateTime": "2023-02-28T20:20:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "I35659",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:30",
+                            "journeyDurationPerMinute": 90,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "I3",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "I3",
+                                "flightNumber": "5659",
+                                "equipment": "M82",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 4,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 3,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "I3",
+            "fareSourceCode": "37313363383238363133326534633130393035303335666334333131656332312631343026353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13163350,
+                    "grandTotalWithoutDiscount": 13163350,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": -679650
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13843000,
+                            "totalFare": 13163350,
+                            "serviceTax": -679650,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13843000,
+                            "totalFareWithMarkupAndVat": 13163350
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 100,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T18:50:00",
+                            "arrivalDateTime": "2023-02-28T20:30:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "I3I35659",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:40",
+                            "journeyDurationPerMinute": 100,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "I3",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "I3",
+                                "flightNumber": "I35659",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 2,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 4,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "38353538666632343763346634383439623635386565363835303566636433352632393226353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13250000,
+                    "grandTotalWithoutDiscount": 13250000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13250000,
+                            "totalFare": 13250000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13250000,
+                            "totalFareWithMarkupAndVat": 13250000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 90,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T21:15:00",
+                            "arrivalDateTime": "2023-02-28T22:45:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97081",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:30",
+                            "journeyDurationPerMinute": 90,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7081",
+                                "equipment": "M82",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 3,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 5,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "37373533396335656638643734343663383263613066666230326233376332652632393226353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13450000,
+                    "grandTotalWithoutDiscount": 13450000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13450000,
+                            "totalFare": 13450000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13450000,
+                            "totalFareWithMarkupAndVat": 13450000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 90,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T08:30:00",
+                            "arrivalDateTime": "2023-02-28T10:00:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97021",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:30",
+                            "journeyDurationPerMinute": 90,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7021",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 1,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 6,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "I3",
+            "fareSourceCode": "6462616261376465666463623437393562663838633461303337393862323836263138303126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13503175,
+                    "grandTotalWithoutDiscount": 13503175,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": -679650
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 14182825,
+                            "totalFare": 13503175,
+                            "serviceTax": -679650,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 14182825,
+                            "totalFareWithMarkupAndVat": 13503175
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 100,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T18:50:00",
+                            "arrivalDateTime": "2023-02-28T20:30:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "I3I35659",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:40",
+                            "journeyDurationPerMinute": 100,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "I3",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "I3",
+                                "flightNumber": "I35659",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 2,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 7,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "66636638616632353037653034306336383835343430653838353233356338362632383226353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 120,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T21:15:00",
+                            "arrivalDateTime": "2023-02-28T23:15:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97081",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "02:00",
+                            "journeyDurationPerMinute": 120,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7081",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 2,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 19,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "FP0",
+            "fareSourceCode": "61616539393064396165366434353735626330663237653463666237663931352633303726353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T21:30:00",
+                            "arrivalDateTime": "2023-02-28T23:15:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "FP0FP7418",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "FP0",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "FP0",
+                                "flightNumber": "FP7418",
+                                "equipment": "",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 5,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 18,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "IRU",
+            "fareSourceCode": "38653164646433343765336234323532616261626536666162356532323032302631383726353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T10:00:00",
+                            "arrivalDateTime": "2023-02-28T11:45:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "IRU8778",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "IRU",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "IRU",
+                                "flightNumber": "8778",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 7,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 17,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "36643463623836663531303934323432616431623666323862633233643666642633303126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 140,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T21:15:00",
+                            "arrivalDateTime": "2023-02-28T23:35:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97081",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "02:20",
+                            "journeyDurationPerMinute": 140,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": null,
+                                "equipment": null,
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 3,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 14,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "FP0",
+            "fareSourceCode": "66633239646338333135363734623837623530333131663665356239396434652631393826353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 80,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T21:30:00",
+                            "arrivalDateTime": "2023-02-28T22:50:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "FP07418",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:20",
+                            "journeyDurationPerMinute": 80,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "FP0",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "FP0",
+                                "flightNumber": "7418",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 4,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 16,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "_VR",
+            "fareSourceCode": "64646132313865383732636334613034616665633238646634386561666663322631353326353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T11:10:00",
+                            "arrivalDateTime": "2023-02-28T12:55:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "_VR5916",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "_VR",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "_VR",
+                                "flightNumber": "5916",
+                                "equipment": "737",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 5,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 15,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "IRU",
+            "fareSourceCode": "63353336656665323136666634623662383462623335366334633032383137362632373426353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 90,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T13:05:00",
+                            "arrivalDateTime": "2023-02-28T14:35:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "IRUIRU8764",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:30",
+                            "journeyDurationPerMinute": 90,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "IRU",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "IRU",
+                                "flightNumber": "IRU8764",
+                                "equipment": "M80",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 6,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 20,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "38383832373837336530313734303138623633666131393366326334306163652633303126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 140,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T08:30:00",
+                            "arrivalDateTime": "2023-02-28T10:50:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97021",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "02:20",
+                            "journeyDurationPerMinute": 140,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": null,
+                                "equipment": null,
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 1,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 13,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "IRU",
+            "fareSourceCode": "64396435656361636634313634393262393332646333633831393234656433652632333426353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 140,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T13:05:00",
+                            "arrivalDateTime": "2023-02-28T15:25:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "IRU8764",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "02:20",
+                            "journeyDurationPerMinute": 140,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "IRU",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "IRU",
+                                "flightNumber": null,
+                                "equipment": null,
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 4,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 12,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "IRU",
+            "fareSourceCode": "36633930306238633938366434623862623066303161626465373237656335342631353326353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T13:05:00",
+                            "arrivalDateTime": "2023-02-28T14:50:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "IRU8764",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "IRU",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "IRU",
+                                "flightNumber": "8764",
+                                "equipment": "M88",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 4,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 11,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "FP0",
+            "fareSourceCode": "35373966373262366364346334313133383761663233343264373631393039352631343126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 90,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T07:00:00",
+                            "arrivalDateTime": "2023-02-28T08:30:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "FP07420",
+                            "resBookDesigCode": "E",
+                            "journeyDuration": "01:30",
+                            "journeyDurationPerMinute": 90,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "FP0",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "FP0",
+                                "flightNumber": "7420",
+                                "equipment": "M82",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 4,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 10,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "_VR",
+            "fareSourceCode": "34343761393365656638383234623564396532373635336266336332343030662632333426353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 120,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T11:10:00",
+                            "arrivalDateTime": "2023-02-28T13:10:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "_VR5916",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "02:00",
+                            "journeyDurationPerMinute": 120,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "_VR",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "_VR",
+                                "flightNumber": null,
+                                "equipment": null,
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 5,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20 کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 9,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Offline",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "39303666336664373137636534373463613636376535393033313432643765642631343126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "WebFare",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 13593000,
+                    "grandTotalWithoutDiscount": 13593000,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 0,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 13593000,
+                            "totalFare": 13593000,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 0,
+                            "vat": 0,
+                            "baseFareWithMarkup": 13593000,
+                            "totalFareWithMarkupAndVat": 13593000
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 90,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T22:15:00",
+                            "arrivalDateTime": "2023-02-28T23:45:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97125",
+                            "resBookDesigCode": "Y",
+                            "journeyDuration": "01:30",
+                            "journeyDurationPerMinute": 90,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "Y",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7125",
+                                "equipment": "M82",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 6,
+                            "isCharter": true,
+                            "isReturn": false,
+                            "baggage": "20کیلوگرم",
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 8,
+            "isCharter": true,
+            "isSystem": false,
+            "isInstance": false,
+            "isOffer": false
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Online",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "39346136663533333836333234626463623330383464653564313664343636352632343126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 16799840,
+                    "grandTotalWithoutDiscount": 16799840,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 1676000,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 15123840,
+                            "totalFare": 16799840,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 1676000,
+                            "vat": 0,
+                            "baseFareWithMarkup": 15123840,
+                            "totalFareWithMarkupAndVat": 16799840
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T06:20:00",
+                            "arrivalDateTime": "2023-02-28T08:05:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97055",
+                            "resBookDesigCode": "C",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "C",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7055",
+                                "equipment": "MD8",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 6,
+                            "isCharter": false,
+                            "isReturn": false,
+                            "baggage": null,
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 21,
+            "isCharter": false,
+            "isSystem": true,
+            "isInstance": false,
+            "isOffer": true
+        },
+        {
+            "passportMandatoryType": "MandatoryBasedOnNationality",
+            "domesticCountryCode": "IR",
+            "isPassportMandatory": false,
+            "isDestinationAddressMandatory": false,
+            "isPassportIssueDateMandatory": false,
+            "directionInd": 0,
+            "refundMethod": "Online",
+            "validatingAirlineCode": "Y9",
+            "fareSourceCode": "38656265376265356563326534393662393839316232613366643031303461632632343126353231313931373039",
+            "hasFareFamilies": false,
+            "airItineraryPricingInfo": {
+                "fareType": "Publish",
+                "itinTotalFare": {
+                    "totalService": 0,
+                    "totalFare": 16799840,
+                    "grandTotalWithoutDiscount": 16799840,
+                    "discountAmount": null,
+                    "totalVat": 0,
+                    "totalTax": 1676000,
+                    "totalServiceTax": 0
+                },
+                "ptcFareBreakdown": [
+                    {
+                        "passengerFare": {
+                            "baseFare": 15123840,
+                            "totalFare": 16799840,
+                            "serviceTax": 0,
+                            "taxes": [],
+                            "total": 0,
+                            "tax": 1676000,
+                            "vat": 0,
+                            "baseFareWithMarkup": 15123840,
+                            "totalFareWithMarkupAndVat": 16799840
+                        },
+                        "passengerTypeQuantity": {
+                            "passengerType": "Adt",
+                            "quantity": 1
+                        }
+                    }
+                ],
+                "fareInfoes": []
+            },
+            "originDestinationOptions": [
+                {
+                    "journeyDurationPerMinute": 105,
+                    "connectionTimePerMinute": 0,
+                    "flightSegments": [
+                        {
+                            "departureDateTime": "2023-02-28T09:45:00",
+                            "arrivalDateTime": "2023-02-28T11:30:00",
+                            "stopQuantity": 0,
+                            "flightNumber": "Y97053",
+                            "resBookDesigCode": "C",
+                            "journeyDuration": "01:45",
+                            "journeyDurationPerMinute": 105,
+                            "connectionTimePerMinute": 0,
+                            "departureAirportLocationCode": "THR",
+                            "arrivalAirportLocationCode": "KIH",
+                            "marketingAirlineCode": "Y9",
+                            "cabinClassCode": "C",
+                            "operatingAirline": {
+                                "code": "Y9",
+                                "flightNumber": "7053",
+                                "equipment": "MD8",
+                                "equipmentName": null
+                            },
+                            "seatsRemaining": 1,
+                            "isCharter": false,
+                            "isReturn": false,
+                            "baggage": null,
+                            "technicalStops": []
+                        }
+                    ]
+                }
+            ],
+            "featured": null,
+            "bestExperienceIndex": 22,
+            "isCharter": false,
+            "isSystem": true,
+            "isInstance": false,
+            "isOffer": true
+        }
+    ],
+    "additionalData": {
+        "airlines": [
+            {
+                "iata": "ZV",
+                "name": "Zagros Airlines",
+                "nameFa": "زاگرس"
+            },
+            {
+                "iata": "FP0",
+                "name": "Fly Persia",
+                "nameFa": "فلای پرشیا"
+            },
+            {
+                "iata": "Y9",
+                "name": "Kish Air",
+                "nameFa": "کیش ایر"
+            },
+            {
+                "iata": "I3",
+                "name": "ATA Airlines",
+                "nameFa": "آتا"
+            },
+            {
+                "iata": "IRU",
+                "name": "chabahar airlines",
+                "nameFa": "چابهار"
+            },
+            {
+                "iata": "_VR",
+                "name": "Varesh",
+                "nameFa": "وارش"
+            }
+        ],
+        "airports": [
+            {
+                "iata": "KIH",
+                "name": "Kish Island",
+                "nameFa": "فرودگاه جزیره کیش",
+                "cityFa": "جزیره کیش",
+                "cityId": "KIH",
+                "countryCode": "IR",
+                "countryFa": "ایران",
+                "latitude": "26.483333",
+                "longitude": "53.95"
+            },
+            {
+                "iata": "THR",
+                "name": "Mehr Abad",
+                "nameFa": "فرودگاه مهرآباد",
+                "cityFa": "تهران",
+                "cityId": "THR",
+                "countryCode": "IR",
+                "countryFa": "ایران",
+                "latitude": "35.689722",
+                "longitude": "51.315833"
+            }
+        ],
+        "cities": null
+    },
+    "airTripType": "OneWay",
+    "airTripTypeStr": "یکطرفه"
+}
