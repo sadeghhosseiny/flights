@@ -4,18 +4,20 @@ import { convertNumberTimeToTextTime } from '../../../utils/date'
 
 interface IDescriptionsProps extends HTMLAttributes<Element> {
   className?: string
-  data: any
+  flightSegments: any
   isSystem: boolean
 }
 
 const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
-  const { data, isSystem } = props
+  const { flightSegments, isSystem } = props
   return (
     <div className='grid grid-flow-row sm:grid-row-3 gap-2'>
       <div className='grid grid-flow-row-dense grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-20'>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>مدت پرواز</Text>
-          <Text className='text-sm'>{convertNumberTimeToTextTime(data.journeyDuration)}</Text>
+          <Text className='text-sm'>
+            {convertNumberTimeToTextTime(flightSegments.journeyDuration)}
+          </Text>
         </div>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>نوع پرواز</Text>
@@ -23,8 +25,8 @@ const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
         </div>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>استرداد</Text>
-          <Text className={`text-sm ${data.isReturn ? '' : 'text-red-500'}`}>
-            {data.isReturn ? 'قابل استرداد' : 'غیر قابل استرداد'}
+          <Text className={`text-sm ${flightSegments.isReturn ? '' : 'text-red-500'}`}>
+            {flightSegments.isReturn ? 'قابل استرداد' : 'غیر قابل استرداد'}
           </Text>
         </div>
       </div>
@@ -35,7 +37,7 @@ const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
         </div>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>بار مجاز</Text>
-          <Text className='text-sm'>{data.baggage || '-'}</Text>
+          <Text className='text-sm'>{flightSegments.baggage || '-'}</Text>
         </div>
         <div />
       </div>
@@ -46,7 +48,7 @@ const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
         </div>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>کلاس نرخی</Text>
-          <Text className='text-sm'>{data.cabinClassCode}</Text>
+          <Text className='text-sm'>{flightSegments.cabinClassCode}</Text>
         </div>
         <div />
       </div>

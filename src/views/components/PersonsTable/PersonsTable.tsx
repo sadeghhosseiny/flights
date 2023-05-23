@@ -9,8 +9,6 @@ interface IPersonsTableProps extends HTMLAttributes<Element> {
 const PersonsTable: FunctionComponent<IPersonsTableProps> = (props) => {
   const { airItineraryPricingInfo } = props
 
-  // const { mobile } = useDiscriptiveWindowSize()
-
   const quantity = airItineraryPricingInfo.passengerTypeQuantity.quantity
   const ticketFee = airItineraryPricingInfo.passengerFare.totalFare / 10
   const typeOfPassenger = airItineraryPricingInfo.passengerTypeQuantity.passengerType
@@ -24,15 +22,12 @@ const PersonsTable: FunctionComponent<IPersonsTableProps> = (props) => {
   }
 
   return (
-    // mobile ? <div>
-
-    // </div> :
     <table className='w-full border-collapse border border-slate-400'>
       <thead>
         <tr className='flex flex-col sm:table-row'>
           {typeOfPassenger === 'Adt' && (
             <th className='flex justify-between sm:table-cell sm:border font-normal p-3 sm:border-slate-300'>
-              <div className='flex'>
+              <div className='flex sm:inline'>
                 <Text component='span' className='text-sm'>
                   {quantity} x{' '}
                 </Text>
@@ -41,9 +36,11 @@ const PersonsTable: FunctionComponent<IPersonsTableProps> = (props) => {
                   {typesOfPassengers[typeOfPassenger as keyof typeof typesOfPassengers]}{' '}
                 </Text>
               </div>
-              <Text component='span' className='text-sm'>
-                {ticketFee.toLocaleString()}
-              </Text>
+              <div className='sm:inline'>
+                <Text component='span' className='text-sm'>
+                  {ticketFee.toLocaleString()}
+                </Text>
+              </div>
             </th>
           )}
           {typeOfPassenger === 'Chd' && (

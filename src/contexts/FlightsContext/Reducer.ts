@@ -4,7 +4,8 @@ import * as constants from './constants'
 import * as flightsActions from './Action'
 
 export const flightsInitialState: types.flightsStateTypes = {
-  flights: {},
+  rawFlights: {},
+  changableFlights: {}
 }
 
 export const flightsReducer = (
@@ -16,10 +17,43 @@ export const flightsReducer = (
     case constants.LOAD_FLIGHTS_DATA: {
       const data = {
         ...state,
-        flights:{ ...action.payload.data}
+        changableFlights:{ ...action.payload.data},
+        rawFlights:{ ...action.payload.data}
       }
       return data
     }
+    case constants.SORT_BY_PRICE: {
+      const tempFlights:any = state.rawFlights
+
+      tempFlights.pricedItineraries.sort((a:any, b:any) => a.airItineraryPricingInfo.itinTotalFare.totalFare - b.airItineraryPricingInfo.itinTotalFare.totalFare)
+
+      return {rawFlights: tempFlights}
+    }
+    case constants.SORT_BY_FLIGHTTIME: {
+      const tempFlights:any = state.rawFlights
+
+      tempFlights.pricedItineraries.sort((a:any, b:any) => Date.parse(a.originDestinationOptions[0].flightSegments[0].departureDateTime) - Date.parse(b.originDestinationOptions[0].flightSegments[0].departureDateTime))
+
+      return {rawFlights: tempFlights}
+    }
+    case constants.HANDLE_CHARTER_FLIGHTS: {
+      const tempFlights:any = state.rawFlights
+      const {check} = action.payload
+      if (check) {
+        return {...state, changableFlights: {
+          ...state.rawFlights,
+          pricedItineraries: tempFlights.pricedItineraries.filter((item:any) => item.isCharter === true)} }
+        } else {
+          return {
+            ...state,
+            changableFlights: {
+              ...state.rawFlights
+            }
+          }
+        }
+    
+    }
+    
     default:
       return state
   }

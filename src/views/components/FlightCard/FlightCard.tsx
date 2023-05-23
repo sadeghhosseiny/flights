@@ -9,6 +9,7 @@ import GeneralDescriptions from '../GeneralDescriptions/GeneralDescriptions'
 import { useDiscriptiveWindowSize } from '../../../hooks/useDiscriptiveWindowSize'
 import Modal from '../Modal/Modal'
 import MobileActionFooter from '../MobileActionFooter/MobileActionFooter'
+import DetailContext from '../../../contexts/ShitContext/DetailContext'
 
 interface IFlightCardProps extends HTMLAttributes<Element> {
   className?: string
@@ -23,56 +24,62 @@ const FlightCard: FunctionComponent<IFlightCardProps> = (props) => {
 
   const { mobile } = useDiscriptiveWindowSize()
 
-  const data = originDestinationOptions[0]?.flightSegments[0]
+  const flightSegments = originDestinationOptions[0]?.flightSegments[0]
 
-  const airPorts = state.flights.additionalData.airports
+  const airPorts = state.changableFlights.additionalData.airports
 
-  const arrivalCity = airPorts.find((item: any) => item.cityId === data.arrivalAirportLocationCode)
-  const sourceCity = airPorts.find((item: any) => item.cityId === data.departureAirportLocationCode)
+  const arrivalCity = airPorts.find(
+    (item: any) => item.cityId === flightSegments.arrivalAirportLocationCode,
+  )
+  const sourceCity = airPorts.find(
+    (item: any) => item.cityId === flightSegments.departureAirportLocationCode,
+  )
 
   return (
-    <div className='flex flex-col bg-white dark:bg-slate-700 pb-2 justify-between'>
-      <div className='flex flex-col md:flex-row sm:border-b sm:border-gray-200 px-3'>
-        <AirLineCard className='flex items-center gap-3' width='56px' height='56px' />
-        <TimeCard sourceCity={sourceCity} arrivalCity={arrivalCity} data={data} />
-        {mobile ? (
-          <div className='flex flex-col-reverse'>
-            <TicketDetailCard
-              setIsModalOpen={setIsModalOpen}
-              planePricingInfo={airItineraryPricingInfo}
-            />
-            <GeneralDescriptions detail={originDestinationOptions[0]?.flightSegments[0]} />
-          </div>
-        ) : (
-          <TicketDetailCard planePricingInfo={airItineraryPricingInfo} />
-        )}
-      </div>
-      {mobile && isModalOpen && (
-        <Modal setIsModalOpen={setIsModalOpen}>
-          <FlightDetailsCard
-            airItineraryPricingInfo={airItineraryPricingInfo.ptcFareBreakdown[0]}
+    <DetailContext.Provider
+      value={{
+        airItineraryPricingInfo: airItineraryPricingInfo.ptcFareBreakdown[0],
+        sourceCity: sourceCity,
+        arrivalCity: arrivalCity,
+        flightSegments: flightSegments,
+        isSystem: props.flight.isSystem,
+      }}
+    >
+      <div className='flex flex-col bg-white dark:bg-slate-700 pb-2 justify-between'>
+        <div className='flex flex-col md:flex-row sm:border-b sm:border-gray-200 px-3'>
+          <AirLineCard className='flex items-center gap-3' width='56px' height='56px' />
+          <TimeCard
             sourceCity={sourceCity}
             arrivalCity={arrivalCity}
-            data={data}
-            isSystem={props.flight.isSystem}
+            flightSegments={flightSegments}
           />
-          <MobileActionFooter planePricingInfo={airItineraryPricingInfo} />
-        </Modal>
-      )}
-      {!mobile && (
-        <div>
-          <Collapse flightDetail={originDestinationOptions[0]}>
-            <FlightDetailsCard
-              airItineraryPricingInfo={airItineraryPricingInfo.ptcFareBreakdown[0]}
-              sourceCity={sourceCity}
-              arrivalCity={arrivalCity}
-              data={data}
-              isSystem={props.flight.isSystem}
-            />
-          </Collapse>
+          {mobile ? (
+            <div className='flex flex-col-reverse'>
+              <TicketDetailCard
+                setIsModalOpen={setIsModalOpen}
+                planePricingInfo={airItineraryPricingInfo}
+              />
+              <GeneralDescriptions detail={originDestinationOptions[0]?.flightSegments[0]} />
+            </div>
+          ) : (
+            <TicketDetailCard planePricingInfo={airItineraryPricingInfo} />
+          )}
         </div>
-      )}
-    </div>
+        {mobile && isModalOpen && (
+          <Modal setIsModalOpen={setIsModalOpen}>
+            <FlightDetailsCard />
+            <MobileActionFooter planePricingInfo={airItineraryPricingInfo} />
+          </Modal>
+        )}
+        {!mobile && (
+          <div>
+            <Collapse flightDetail={originDestinationOptions[0]}>
+              <FlightDetailsCard />
+            </Collapse>
+          </div>
+        )}
+      </div>
+    </DetailContext.Provider>
   )
 }
 

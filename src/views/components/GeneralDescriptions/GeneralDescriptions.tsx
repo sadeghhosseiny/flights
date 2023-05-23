@@ -12,13 +12,14 @@ const GeneralDescriptions: FunctionComponent<IGeneralDescriptionsProps> = (props
     <div className='flex border-y sm:border-none sm:border-gray-300 py-2 my-2 justify-center items-center gap-2'>
       {detail?.isCharter && (
         <>
-          <Pill>چارتر</Pill> <span>.</span>
+          <Pill className='sm:text-sm'>چارتر</Pill> <span>.</span>
         </>
       )}
-      <Text>اکونومی</Text>.<Text>{detail?.seatsRemaining} صندلی خالی</Text>.
-      <Text>شماره پرواز : {detail?.flightNumber}</Text>.
-      <Text className='hidden sm:block'>تامین کننده: پرایس لاین</Text>
-      <span className='hidden sm:inline-block'>.</span>
+      <Text className='sm:text-sm'>اکونومی</Text>.
+      <Text className='sm:text-sm'>{detail?.seatsRemaining} صندلی خالی</Text>.
+      <Text className='sm:text-sm'>شماره پرواز : {detail?.flightNumber}</Text>.
+      <Text className='hidden sm:text-sm sm:block'>تامین کننده: پرایس لاین</Text>
+      <span className='hidden sm:text-sm sm:inline-block'>.</span>
     </div>
   )
 }

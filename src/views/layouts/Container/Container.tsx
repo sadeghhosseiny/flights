@@ -11,7 +11,7 @@ const Container: FunctionComponent<IContainerProps> = (props) => {
 
   return createElement(component || 'div', {
     ...otherProps,
-    className: twMerge('mx-auto max-w-9/10 md:max-w-8/10', className),
+    className: twMerge('mx-auto max-w-9/10', className),
   })
 }
 

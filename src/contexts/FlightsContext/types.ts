@@ -7,12 +7,20 @@ export type FlightType = {
 
 
 export type flightsStateTypes = {
-  flights: FlightType
+  rawFlights: FlightType
+  changableFlights: any
 }
 
 export type flightsActionsTypes = {
       type: typeof constants.LOAD_FLIGHTS_DATA
       payload : {data: FlightType} 
+    } | {
+      type: typeof constants.SORT_BY_PRICE
+    } | {
+      type: typeof constants.SORT_BY_FLIGHTTIME
+    } | {
+      type: typeof constants.HANDLE_CHARTER_FLIGHTS
+      payload: {check: boolean}
     }
 
 export type flightsDispatchType = Dispatch<flightsActionsTypes>

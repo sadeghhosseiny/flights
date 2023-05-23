@@ -6,24 +6,16 @@ import TimeLocationInformation from '../TimeLocationInformation'
 import Descriptions from '../Descriptions/Descriptions'
 import PersonsTable from '../PersonsTable/PersonsTable'
 import { getTime } from '../../../utils/date'
+import useDetailContext from '../../../contexts/ShitContext/useDetailContext'
 
 interface IDetailsProps extends HTMLAttributes<Element> {
   className?: string
-  data: any
-  airItineraryPricingInfo: any
-  isSystem: boolean
-  sourceCity: {
-    cityFa: string
-    cityId: string
-  }
-  arrivalCity: {
-    cityFa: string
-    cityId: string
-  }
 }
 
 const Details: FunctionComponent<IDetailsProps> = (props) => {
-  const { sourceCity, arrivalCity, data, airItineraryPricingInfo } = props
+  const { sourceCity, arrivalCity, flightSegments, airItineraryPricingInfo, isSystem } =
+    useDetailContext()
+
   return (
     <div>
       <Text className='my-5 text-base sm:text-lg px-3 font-bold'>
@@ -41,14 +33,14 @@ const Details: FunctionComponent<IDetailsProps> = (props) => {
         />
         <div className='flex flex-col gap-6 self-start'>
           <TimeLocationInformation
-            time={getTime(data.departureDateTime)}
-            data={data}
+            time={getTime(flightSegments.departureDateTime)}
+            flightSegments={flightSegments}
             city={sourceCity}
           />
-          <Descriptions isSystem={props.isSystem} data={data} />
+          <Descriptions isSystem={isSystem} flightSegments={flightSegments} />
           <TimeLocationInformation
-            time={getTime(data.arrivalDateTime)}
-            data={data}
+            time={getTime(flightSegments.arrivalDateTime)}
+            flightSegments={flightSegments}
             city={arrivalCity}
           />
         </div>

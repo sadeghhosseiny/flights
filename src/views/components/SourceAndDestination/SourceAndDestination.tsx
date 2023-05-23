@@ -14,7 +14,7 @@ const SourceAndDestination: FunctionComponent<ISourceAndDestinationProps> = (pro
   const { time, showTime, city } = props
   return (
     <>
-      {showTime && <Text className='text-2xl sm:text font-bold'>{time}</Text>}
+      {showTime && <Text className='text-xl sm:text-2xl font-bold'>{time}</Text>}
       <div className='flex gap-1 items-center'>
         <Text className='sm:text-base text-sm'>{city?.cityFa}</Text>
         <Text className='text-gray-400 text-xs'>({city?.cityId})</Text>

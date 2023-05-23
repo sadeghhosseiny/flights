@@ -4,7 +4,7 @@ import { convertRawDateToPersianDate, convertRawDateToUsDate } from '../../../ut
 
 interface ITimeLocationInformationProps extends HTMLAttributes<Element> {
   className?: string
-  data: any
+  flightSegments: any
   time: any
   city: {
     cityFa: string
@@ -13,10 +13,10 @@ interface ITimeLocationInformationProps extends HTMLAttributes<Element> {
 }
 
 const TimeLocationInformation: FunctionComponent<ITimeLocationInformationProps> = (props) => {
-  const { city, data, time } = props
+  const { city, flightSegments, time } = props
 
-  const arrivalRawDate = data.arrivalDateTime.split('T')[0]
-  const departureDateTime = data.departureDateTime.split('T')[0]
+  const arrivalRawDate = flightSegments.arrivalDateTime.split('T')[0]
+  const departureDateTime = flightSegments.departureDateTime.split('T')[0]
 
   return (
     <div className='flex flex-col sm:flex-row gap-5 items-start'>

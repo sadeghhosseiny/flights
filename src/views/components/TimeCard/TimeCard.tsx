@@ -6,7 +6,7 @@ import SourceAndDestination from '../SourceAndDestination/SourceAndDestination'
 
 interface ITimeCardProps extends HTMLAttributes<Element> {
   className?: string
-  data: any
+  flightSegments: any
   sourceCity: {
     cityFa: string
     cityId: string
@@ -18,15 +18,19 @@ interface ITimeCardProps extends HTMLAttributes<Element> {
 }
 
 const TimeCard: FunctionComponent<ITimeCardProps> = (props) => {
-  const { data, sourceCity, arrivalCity } = props
+  const { flightSegments, sourceCity, arrivalCity } = props
   return (
     <div className='flex items-center flex-grow'>
       <div className='flex flex-col items-end w-1/4'>
-        <SourceAndDestination showTime time={getTime(data.departureDateTime)} city={sourceCity} />
+        <SourceAndDestination
+          showTime
+          time={getTime(flightSegments.departureDateTime)}
+          city={sourceCity}
+        />
       </div>
       <div className='flex flex-col justify-center items-center w-1/2'>
         <Text className='text-gray-400 text-sm'>
-          {convertNumberTimeToTextTime(data.journeyDuration)}
+          {convertNumberTimeToTextTime(flightSegments.journeyDuration)}
         </Text>
         <DurationLine
           borderWidth='border-b'
@@ -37,7 +41,11 @@ const TimeCard: FunctionComponent<ITimeCardProps> = (props) => {
         />
       </div>
       <div className='flex flex-col items-start w-1/4'>
-        <SourceAndDestination showTime time={getTime(data.arrivalDateTime)} city={arrivalCity} />
+        <SourceAndDestination
+          showTime
+          time={getTime(flightSegments.arrivalDateTime)}
+          city={arrivalCity}
+        />
       </div>
     </div>
   )

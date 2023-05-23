@@ -20,7 +20,7 @@ const Collapse: FunctionComponent<IOneWayCollapseProps> = (props) => {
   const toggle = () => setOpen((prev) => !prev)
 
   return (
-    <div className='mt-3'>
+    <div>
       <div className='flex px-3 items-center justify-between content-center'>
         <GeneralDescriptions detail={detail} />
         <div className='flex items-center py-2 px-1 cursor-pointer' onClick={toggle}>
