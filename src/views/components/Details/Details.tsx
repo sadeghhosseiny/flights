@@ -5,16 +5,31 @@ import DurationLine from '../DurationLine/DurationLine'
 import TimeLocationInformation from '../TimeLocationInformation'
 import Descriptions from '../Descriptions/Descriptions'
 import PersonsTable from '../PersonsTable/PersonsTable'
+import { getTime } from '../../../utils/date'
 
 interface IDetailsProps extends HTMLAttributes<Element> {
   className?: string
+  data: any
+  airItineraryPricingInfo: any
+  isSystem: boolean
+  sourceCity: {
+    cityFa: string
+    cityId: string
+  }
+  arrivalCity: {
+    cityFa: string
+    cityId: string
+  }
 }
 
-const Details: FunctionComponent<IDetailsProps> = ({ children }) => {
+const Details: FunctionComponent<IDetailsProps> = (props) => {
+  const { sourceCity, arrivalCity, data, airItineraryPricingInfo } = props
   return (
     <div>
-      <Text className='my-5 text-lg font-bold'>پرواز رفت تهران - استانبول</Text>
-      <div className='flex items-center gap-7 mt-3'>
+      <Text className='my-5 text-lg px-3 font-bold'>
+        پرواز رفت {sourceCity.cityFa} - {arrivalCity.cityFa}
+      </Text>
+      <div className='flex items-center px-3 gap-7 mt-3'>
         <AirLineCard className='flex gap-3 flex-col' width='40px' height='40px' />
         <DurationLine
           direction='flex-col'
@@ -25,13 +40,21 @@ const Details: FunctionComponent<IDetailsProps> = ({ children }) => {
           height='h-36'
         />
         <div className='flex flex-col gap-6 self-start'>
-          <TimeLocationInformation />
-          <Descriptions />
-          <TimeLocationInformation />
+          <TimeLocationInformation
+            time={getTime(data.departureDateTime)}
+            data={data}
+            city={sourceCity}
+          />
+          <Descriptions isSystem={props.isSystem} data={data} />
+          <TimeLocationInformation
+            time={getTime(data.arrivalDateTime)}
+            data={data}
+            city={arrivalCity}
+          />
         </div>
       </div>
-      <div className='mt-8'>
-        <PersonsTable />
+      <div className='px-4 mt-8'>
+        <PersonsTable airItineraryPricingInfo={airItineraryPricingInfo} />
       </div>
     </div>
   )

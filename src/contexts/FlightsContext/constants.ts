@@ -1,1 +1,2 @@
 export const LOAD_FLIGHTS_DATA = 'LOAD_FLIGHTS_DATA'
+export const LOAD_AIR_PORTS = 'LOAD_AIR_PORTS'

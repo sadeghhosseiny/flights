@@ -1,6 +1,6 @@
-import { FunctionComponent, useEffect, useReducer, useState } from 'react'
+import React, { Fragment, FunctionComponent, useEffect, useReducer, useState } from 'react'
 import {
-  FlightContext,
+  FlightsContext,
   flightsInitialState,
   flightsReducer,
   flightsActions,
@@ -30,7 +30,7 @@ const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
 
   return (
     <Container className='py-8 relative'>
-      <FlightContext.Provider
+      <FlightsContext.Provider
         value={{
           state: flightsListState,
           dispatch: flightsDispatch,
@@ -38,9 +38,15 @@ const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
         }}
       >
         <>
-          <FlightCard />
+          {flightsListState?.flights?.pricedItineraries?.map((item: any, index: number) => (
+            <React.Fragment key={item.fareSourceCode}>
+              <div className='py-4'>
+                <FlightCard flight={item} />
+              </div>
+            </React.Fragment>
+          ))}
         </>
-      </FlightContext.Provider>
+      </FlightsContext.Provider>
     </Container>
   )
 }

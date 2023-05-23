@@ -8,7 +8,7 @@ interface ITabsProps extends HTMLAttributes<Element> {
 
 const Tabs: FunctionComponent<ITabsProps> = ({ children }) => {
   return (
-    <div className='flex border-b border-gray-300'>
+    <div className='flex px-3 border-b border-gray-300'>
       <Button className='flex rounded-b-none gap-3 items-center' color='bg-blue-700'>
         <PlaneLogo />
         جزئیات پرواز

@@ -2,7 +2,9 @@ import { Dispatch } from 'react'
 import * as constants from './constants'
 
 export type FlightType = {
+  [x: string]: any
 }
+
 
 export type flightsStateTypes = {
   flights: FlightType
@@ -10,7 +12,7 @@ export type flightsStateTypes = {
 
 export type flightsActionsTypes = {
       type: typeof constants.LOAD_FLIGHTS_DATA
-      payload : {data: flightsStateTypes} 
+      payload : {data: FlightType} 
     }
 
 export type flightsDispatchType = Dispatch<flightsActionsTypes>

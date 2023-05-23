@@ -18,7 +18,6 @@ export const flightsReducer = (
         ...state,
         flights:{ ...action.payload.data}
       }
-      console.log(data)
       return data
     }
     default:
