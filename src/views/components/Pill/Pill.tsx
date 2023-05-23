@@ -8,7 +8,8 @@ interface IPillProps extends HTMLAttributes<Element> {
 const Pill: FunctionComponent<IPillProps> = (props) => {
   const { component = 'div', className, ...otherProps } = props
 
-  const defaultStyle = 'bg-gray-200 py-1 px-2 text-primary rounded dark:text-grey-100'
+  const defaultStyle =
+    'bg-gray-200 py-1 px-2 text-primary text-xs sm:text-base rounded dark:text-grey-100'
 
   return createElement(component, {
     className: twMerge(defaultStyle, className),

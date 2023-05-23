@@ -8,7 +8,7 @@ interface ITextProps extends HTMLAttributes<Element> {
 const Text: FunctionComponent<ITextProps> = (props) => {
   const { component = 'div', className, ...otherProps } = props
 
-  const defaultStyle = 'text-primary dark:text-grey-100'
+  const defaultStyle = 'text-primary text-xs sm:text-base dark:text-grey-100'
 
   return createElement(component, {
     className: twMerge(defaultStyle, className),

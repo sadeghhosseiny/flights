@@ -1,4 +1,4 @@
-import { FunctionComponent, HTMLAttributes, useContext, useEffect } from 'react'
+import { FunctionComponent, HTMLAttributes } from 'react'
 import Text from '../Text/Text'
 import DurationLine from '../DurationLine/DurationLine'
 import { convertNumberTimeToTextTime, getTime } from '../../../utils/date'

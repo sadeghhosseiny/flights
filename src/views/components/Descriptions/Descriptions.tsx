@@ -11,8 +11,8 @@ interface IDescriptionsProps extends HTMLAttributes<Element> {
 const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
   const { data, isSystem } = props
   return (
-    <div className='grid grid-flow-row grid-row-3 gap-2'>
-      <div className='grid grid-flow-row-dense grid-cols-3 gap-20'>
+    <div className='grid grid-flow-row sm:grid-row-3 gap-2'>
+      <div className='grid grid-flow-row-dense grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-20'>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>مدت پرواز</Text>
           <Text className='text-sm'>{convertNumberTimeToTextTime(data.journeyDuration)}</Text>
@@ -28,7 +28,7 @@ const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
           </Text>
         </div>
       </div>
-      <div className='grid grid-flow-row-dense grid-cols-3 gap-20'>
+      <div className='grid grid-flow-row-dense grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-20'>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>نوع هواپیما</Text>
           <Text className='text-sm'>Airbus A320</Text>
@@ -39,7 +39,7 @@ const Descriptions: FunctionComponent<IDescriptionsProps> = (props) => {
         </div>
         <div />
       </div>
-      <div className='grid grid-flow-row-dense grid-cols-3 gap-20'>
+      <div className='grid grid-flow-row-dense grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-20'>
         <div className='flex gap-6'>
           <Text className='text-sm text-gray-400'>کلاس پرواز</Text>
           <Text className='text-sm'>اکونومی</Text>

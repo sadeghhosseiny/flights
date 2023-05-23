@@ -19,21 +19,21 @@ const TimeLocationInformation: FunctionComponent<ITimeLocationInformationProps> 
   const departureDateTime = data.departureDateTime.split('T')[0]
 
   return (
-    <div className='flex gap-5 items-start'>
-      <div className='flex gap-2 pl-3 border-l border-l-gray-300'>
+    <div className='flex flex-col sm:flex-row gap-5 items-start'>
+      <div className='flex gap-2 pl-3 sm:border-l sm:border-l-gray-300'>
         <Text className='font-bold'> {time} </Text>
         <Text>
           {city.cityFa} ({city.cityId})
         </Text>
       </div>
-      <div className='pl-3 border-l border-l-gray-300'>
+      <div className='pl-3 sm:border-l sm:border-l-gray-300'>
         <Text>
           {convertRawDateToPersianDate(arrivalRawDate)} ({convertRawDateToUsDate(departureDateTime)}
           )
         </Text>
       </div>
-      <div className='pl-3 border-l border-l-gray-300'>
-        <Text className='text-gray-300'>Imam Khomeini Intl</Text>
+      <div className='pl-3 sm:border-l sm:border-l-gray-300'>
+        <Text className='text-gray-400'>Imam Khomeini Intl</Text>
       </div>
     </div>
   )

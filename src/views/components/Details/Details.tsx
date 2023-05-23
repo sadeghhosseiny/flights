@@ -26,18 +26,18 @@ const Details: FunctionComponent<IDetailsProps> = (props) => {
   const { sourceCity, arrivalCity, data, airItineraryPricingInfo } = props
   return (
     <div>
-      <Text className='my-5 text-lg px-3 font-bold'>
+      <Text className='my-5 text-base sm:text-lg px-3 font-bold'>
         پرواز رفت {sourceCity.cityFa} - {arrivalCity.cityFa}
       </Text>
       <div className='flex items-center px-3 gap-7 mt-3'>
-        <AirLineCard className='flex gap-3 flex-col' width='40px' height='40px' />
+        <AirLineCard className='flex mb-16 sm:mb-0 gap-3 flex-col' width='40px' height='40px' />
         <DurationLine
           direction='flex-col'
           borderStyle='dotted'
           borderWidth='border-r-4'
           lineWidth='0'
           width='w-[4px]'
-          height='h-36'
+          height='h-[330px] sm:h-36'
         />
         <div className='flex flex-col gap-6 self-start'>
           <TimeLocationInformation

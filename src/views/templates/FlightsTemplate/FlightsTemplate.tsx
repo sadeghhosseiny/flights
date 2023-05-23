@@ -1,4 +1,4 @@
-import React, { Fragment, FunctionComponent, useEffect, useReducer, useState } from 'react'
+import React, { FunctionComponent, useEffect, useReducer } from 'react'
 import {
   FlightsContext,
   flightsInitialState,
@@ -14,7 +14,7 @@ interface IFlightsTemplate {}
 const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
   const [flightsListState, flightsDispatch] = useReducer(flightsReducer, flightsInitialState)
 
-  const [dates, setDates] = useState<string[]>([])
+  // const [dates, setDates] = useState<string[]>([])
 
   // const sortedData = () => {
   //   const temp: string[] = data.pricedItineraries
@@ -38,7 +38,7 @@ const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
         }}
       >
         <>
-          {flightsListState?.flights?.pricedItineraries?.map((item: any, index: number) => (
+          {flightsListState?.flights?.pricedItineraries?.map((item: any) => (
             <React.Fragment key={item.fareSourceCode}>
               <div className='py-4'>
                 <FlightCard flight={item} />
