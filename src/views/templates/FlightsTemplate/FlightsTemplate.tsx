@@ -9,6 +9,7 @@ import Container from '../../layouts/Container'
 import data from '../../../mock_data/flights.json'
 import FlightCard from '../../components/FlightCard/FlightCard'
 import SideBar from '../../layouts/SideBar/SideBar'
+import { RootFlightsTypes } from '../../../types/flightsTypes.types'
 
 interface IFlightsTemplate {}
 
@@ -16,10 +17,10 @@ const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
   const [flightsListState, flightsDispatch] = useReducer(flightsReducer, flightsInitialState)
 
   useEffect(() => {
-    flightsActions.loadFlightsData(data as any)(flightsDispatch)
+    flightsActions.loadFlightsData(data as RootFlightsTypes)(flightsDispatch)
   }, [])
 
-  const fucntionObjects: any = {
+  const fucntionObjects: Record<string, () => void> = {
     price: () => flightsActions.sortFlightsBasedOnPrice()(flightsDispatch),
     flightTime: () => flightsActions.sortFlightsBasedOnDate()(flightsDispatch),
   }
@@ -61,7 +62,7 @@ const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
               <SideBar />
             </div>
             <div className='col-span-9'>
-              {flightsListState?.changableFlights?.pricedItineraries?.map((item: any) => (
+              {flightsListState?.changableFlights?.pricedItineraries?.map((item) => (
                 <React.Fragment key={item.fareSourceCode}>
                   <div className='py-4'>
                     <FlightCard flight={item} />

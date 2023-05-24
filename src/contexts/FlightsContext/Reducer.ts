@@ -2,14 +2,15 @@ import { createContext } from 'react'
 import * as types from './types'
 import * as constants from './constants'
 import * as flightsActions from './Action'
+import { PricedItinerary, RootFlightsTypes } from '../../types/flightsTypes.types'
 
 export const flightsInitialState: types.flightsStateTypes = {
-  rawFlights: {},
-  changableFlights: {},
-  filters: {},
+  rawFlights: {} as RootFlightsTypes,
+  changableFlights: {} as RootFlightsTypes,
+  filters: {} as types.filtersType,
 }
 
-const applyFilterOnItem = (item: any, key: any, value: any): boolean => {
+const applyFilterOnItem = (item: PricedItinerary, key: string, value: any): boolean => {
   switch (key) {
     case 'isCharter': {
       return item.isCharter === value
@@ -33,7 +34,7 @@ const applyFilterOnItem = (item: any, key: any, value: any): boolean => {
 export const flightsReducer = (
   state: types.flightsStateTypes = flightsInitialState,
   action: types.flightsActionsTypes,
-): any => {
+): types.flightsStateTypes => {
   const { type } = action
   switch (type) {
     case constants.LOAD_FLIGHTS_DATA: {
@@ -45,10 +46,10 @@ export const flightsReducer = (
       return data
     }
     case constants.SORT_BY_PRICE: {
-      const tempFlights: any = state.rawFlights
+      const tempFlights = state.rawFlights
 
       tempFlights.pricedItineraries.sort(
-        (a: any, b: any) =>
+        (a, b) =>
           a.airItineraryPricingInfo.itinTotalFare.totalFare -
           b.airItineraryPricingInfo.itinTotalFare.totalFare,
       )
@@ -56,10 +57,10 @@ export const flightsReducer = (
       return { ...state, changableFlights: tempFlights }
     }
     case constants.SORT_BY_FLIGHTTIME: {
-      const tempFlights: any = state.rawFlights
+      const tempFlights = state.rawFlights
 
       tempFlights.pricedItineraries.sort(
-        (a: any, b: any) =>
+        (a, b) =>
           Date.parse(a.originDestinationOptions[0].flightSegments[0].departureDateTime) -
           Date.parse(b.originDestinationOptions[0].flightSegments[0].departureDateTime),
       )
@@ -67,17 +68,17 @@ export const flightsReducer = (
       return { ...state, changableFlights: tempFlights }
     }
     case constants.HANDLE_FILTERS: {
-      const { type, obj } = action.payload
+      const { type, data } = action.payload
 
       if (Object.keys(state.filters).includes(type)) {
         state.filters[type] = {
           ...state.filters[type],
-          ...obj,
+          ...data,
         }
       } else {
         state.filters = {
           ...state.filters,
-          [type]: { ...obj },
+          [type]: { ...data },
         }
       }
 
@@ -86,9 +87,9 @@ export const flightsReducer = (
       let filtered = []
 
       filtered = temp.pricedItineraries.filter(
-        (item: any) =>
-          !Object.entries(state.filters).find((type: any) =>
-            Object.entries(state.filters[type[0]]).find((key: any) => {
+        (item) =>
+          !Object.entries(state.filters).find((type) =>
+            Object.entries(state.filters[type[0]]).find((key) => {
               return !applyFilterOnItem(item, key[0], key[1])
             }),
           ),

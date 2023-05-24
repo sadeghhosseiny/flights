@@ -13,7 +13,7 @@ const SideBar: FunctionComponent<ISideBarProps> = () => {
   const deb = useCallback(
     (() => {
       let timerReference: any = null
-      return (type: any, name: any, obj: any) => {
+      return (type: string, name: string, obj: any) => {
         if (timerReference) {
           clearTimeout(timerReference)
         }

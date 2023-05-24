@@ -1,15 +1,13 @@
 import { FunctionComponent, HTMLAttributes } from 'react'
 import Text from '../Text/Text'
 import { convertRawDateToPersianDate, convertRawDateToUsDate } from '../../../utils/date'
+import { Airport, FlightSegment } from '../../../types/flightsTypes.types'
 
 interface ITimeLocationInformationProps extends HTMLAttributes<Element> {
   className?: string
-  flightSegments: any
-  time: any
-  city: {
-    cityFa: string
-    cityId: string
-  }
+  flightSegments: FlightSegment
+  time: string
+  city: Airport
 }
 
 const TimeLocationInformation: FunctionComponent<ITimeLocationInformationProps> = (props) => {

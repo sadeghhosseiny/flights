@@ -1,9 +1,10 @@
 import { FunctionComponent, HTMLAttributes } from 'react'
 import Text from '../Text/Text'
+import { PtcFareBreakdown } from '../../../types/flightsTypes.types'
 
 interface IPersonsTableProps extends HTMLAttributes<Element> {
   className?: string
-  airItineraryPricingInfo: any
+  airItineraryPricingInfo: PtcFareBreakdown
 }
 
 const PersonsTable: FunctionComponent<IPersonsTableProps> = (props) => {

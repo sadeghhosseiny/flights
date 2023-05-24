@@ -3,18 +3,13 @@ import Text from '../Text/Text'
 import DurationLine from '../DurationLine/DurationLine'
 import { convertNumberTimeToTextTime, getTime } from '../../../utils/date'
 import SourceAndDestination from '../SourceAndDestination/SourceAndDestination'
+import { Airport, FlightSegment } from '../../../types/flightsTypes.types'
 
 interface ITimeCardProps extends HTMLAttributes<Element> {
   className?: string
-  flightSegments: any
-  sourceCity: {
-    cityFa: string
-    cityId: string
-  }
-  arrivalCity: {
-    cityFa: string
-    cityId: string
-  }
+  flightSegments: FlightSegment
+  sourceCity: Airport
+  arrivalCity: Airport
 }
 
 const TimeCard: FunctionComponent<ITimeCardProps> = (props) => {

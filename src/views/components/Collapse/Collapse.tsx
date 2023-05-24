@@ -1,10 +1,11 @@
 import { FunctionComponent, HTMLAttributes, useState } from 'react'
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import GeneralDescriptions from '../GeneralDescriptions/GeneralDescriptions'
+import { OriginDestinationOption } from '../../../types/flightsTypes.types'
 
 interface IOneWayCollapseProps extends HTMLAttributes<Element> {
   className?: string
-  flightDetail: any
+  flightDetail: OriginDestinationOption
 }
 
 const icons = {

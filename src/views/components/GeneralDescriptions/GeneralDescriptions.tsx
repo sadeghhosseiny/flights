@@ -1,9 +1,10 @@
 import { FunctionComponent } from 'react'
 import Pill from '../Pill/Pill'
 import Text from '../Text/Text'
+import { FlightSegment } from '../../../types/flightsTypes.types'
 
 interface IGeneralDescriptionsProps {
-  detail: any
+  detail: FlightSegment
 }
 
 const GeneralDescriptions: FunctionComponent<IGeneralDescriptionsProps> = (props) => {

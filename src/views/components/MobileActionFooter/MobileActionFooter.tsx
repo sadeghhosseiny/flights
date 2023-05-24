@@ -1,9 +1,10 @@
 import { FunctionComponent, HTMLAttributes } from 'react'
 import Button from '../Button/Button'
 import Text from '../Text/Text'
+import { AirItineraryPricingInfo } from '../../../types/flightsTypes.types'
 
 interface IMobileActionFooterProps extends HTMLAttributes<Element> {
-  planePricingInfo: any
+  planePricingInfo: AirItineraryPricingInfo
 }
 
 const MobileActionFooter: FunctionComponent<IMobileActionFooterProps> = (props) => {

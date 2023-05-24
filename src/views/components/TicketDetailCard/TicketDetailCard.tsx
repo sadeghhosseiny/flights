@@ -3,10 +3,11 @@ import Text from '../Text/Text'
 import Button from '../Button/Button'
 import { useDiscriptiveWindowSize } from '../../../hooks/useDiscriptiveWindowSize'
 import useHandleScroll from '../../../hooks/useHandleScroll'
+import { AirItineraryPricingInfo } from '../../../types/flightsTypes.types'
 
 interface ITicketDetailCardProps extends HTMLAttributes<Element> {
   className?: string
-  planePricingInfo: any
+  planePricingInfo: AirItineraryPricingInfo
   setIsModalOpen?: Dispatch<SetStateAction<boolean>>
 }
 

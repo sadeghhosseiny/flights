@@ -10,10 +10,11 @@ import { useDiscriptiveWindowSize } from '../../../hooks/useDiscriptiveWindowSiz
 import Modal from '../Modal/Modal'
 import MobileActionFooter from '../MobileActionFooter/MobileActionFooter'
 import DetailContext from '../../../contexts/DetailContext/DetailContext'
+import { PricedItinerary } from '../../../types/flightsTypes.types'
 
 interface IFlightCardProps extends HTMLAttributes<Element> {
   className?: string
-  flight: any
+  flight: PricedItinerary
 }
 
 const FlightCard: FunctionComponent<IFlightCardProps> = (props) => {
@@ -29,18 +30,18 @@ const FlightCard: FunctionComponent<IFlightCardProps> = (props) => {
   const airPorts = state.changableFlights.additionalData.airports
 
   const arrivalCity = airPorts.find(
-    (item: any) => item.cityId === flightSegments.arrivalAirportLocationCode,
+    (item) => item.cityId === flightSegments.arrivalAirportLocationCode,
   )
   const sourceCity = airPorts.find(
-    (item: any) => item.cityId === flightSegments.departureAirportLocationCode,
+    (item) => item.cityId === flightSegments.departureAirportLocationCode,
   )
 
   return (
     <DetailContext.Provider
       value={{
         airItineraryPricingInfo: airItineraryPricingInfo.ptcFareBreakdown[0],
-        sourceCity: sourceCity,
-        arrivalCity: arrivalCity,
+        sourceCity: sourceCity!,
+        arrivalCity: arrivalCity!,
         flightSegments: flightSegments,
         isSystem: props.flight.isSystem,
       }}
@@ -49,8 +50,8 @@ const FlightCard: FunctionComponent<IFlightCardProps> = (props) => {
         <div className='flex flex-col md:flex-row sm:border-b sm:border-gray-200 px-3'>
           <AirLineCard className='flex items-center gap-3' width='56px' height='56px' />
           <TimeCard
-            sourceCity={sourceCity}
-            arrivalCity={arrivalCity}
+            sourceCity={sourceCity!}
+            arrivalCity={arrivalCity!}
             flightSegments={flightSegments}
           />
           {mobile ? (

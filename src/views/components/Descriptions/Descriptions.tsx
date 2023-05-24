@@ -1,10 +1,11 @@
 import { FunctionComponent, HTMLAttributes } from 'react'
 import Text from '../Text/Text'
 import { convertNumberTimeToTextTime } from '../../../utils/date'
+import { FlightSegment } from '../../../types/flightsTypes.types'
 
 interface IDescriptionsProps extends HTMLAttributes<Element> {
   className?: string
-  flightSegments: any
+  flightSegments: FlightSegment
   isSystem: boolean
 }
 
