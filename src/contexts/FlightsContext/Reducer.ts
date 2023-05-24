@@ -76,6 +76,7 @@ export const flightsReducer = (
         }
       } else {
         state.filters = {
+          ...state.filters,
           [type]: { ...obj },
         }
       }
