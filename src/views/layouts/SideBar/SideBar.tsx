@@ -27,11 +27,12 @@ const SideBar: FunctionComponent<ISideBarProps> = () => {
   )
 
   const handleFilters = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, checked, type } = e.target
+
     flushSync(() => {
-      setRange(Number(e.target.value) ? e.target.value : '')
+      type === 'range' && setRange(e.target.value)
     })
 
-    const { name, checked, type } = e.target
     let obj = null
 
     type === 'checkbox' ? (obj = checked) : (obj = { from: 0, to: e.target.value })

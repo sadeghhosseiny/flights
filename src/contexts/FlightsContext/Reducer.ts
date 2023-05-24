@@ -46,7 +46,7 @@ export const flightsReducer = (
       return data
     }
     case constants.SORT_BY_PRICE: {
-      const tempFlights = state.rawFlights
+      const tempFlights = state.changableFlights
 
       tempFlights.pricedItineraries.sort(
         (a, b) =>
@@ -57,7 +57,7 @@ export const flightsReducer = (
       return { ...state, changableFlights: tempFlights }
     }
     case constants.SORT_BY_FLIGHTTIME: {
-      const tempFlights = state.rawFlights
+      const tempFlights = state.changableFlights
 
       tempFlights.pricedItineraries.sort(
         (a, b) =>
