@@ -95,7 +95,10 @@ export const flightsReducer = (
           ),
       )
 
-      if (Object.values(state.filters[type]).every((value) => value === false)) {
+      if (
+        Object.values(state.filters[type]).every((value) => value === false) &&
+        !Object.keys(state.filters).includes('range')
+      ) {
         return {
           ...state,
           changableFlights: {
