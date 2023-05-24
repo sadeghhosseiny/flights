@@ -1,7 +1,7 @@
 import { FunctionComponent, HTMLAttributes } from 'react'
 import Tabs from '../Tabs/Tabs'
 import Details from '../Details'
-import { useShitContext } from '../../../contexts/ShitContext'
+import { useDetailContext } from '../../../contexts/DetailContext'
 
 interface IFlightDetailsCardProps extends HTMLAttributes<Element> {
   className?: string

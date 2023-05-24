@@ -6,7 +6,7 @@ import TimeLocationInformation from '../TimeLocationInformation'
 import Descriptions from '../Descriptions/Descriptions'
 import PersonsTable from '../PersonsTable/PersonsTable'
 import { getTime } from '../../../utils/date'
-import useDetailContext from '../../../contexts/ShitContext/useDetailContext'
+import useDetailContext from '../../../contexts/DetailContext/useDetailContext'
 
 interface IDetailsProps extends HTMLAttributes<Element> {
   className?: string

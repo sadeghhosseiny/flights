@@ -9,8 +9,8 @@ type WindowSizeReturnType = {
 function screenType(width: number): WindowSizeReturnType {
   if (!width) return { mobile: true, tablet: false, desktop: false }
   return {
-    mobile: width <= 479,
-    tablet: width > 479 && width <= 976,
+    mobile: width <= 480,
+    tablet: width > 480 && width <= 976,
     desktop: width > 976,
   }
 }

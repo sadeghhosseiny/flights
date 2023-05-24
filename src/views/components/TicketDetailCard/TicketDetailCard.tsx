@@ -19,8 +19,10 @@ const TicketDetailCard: FunctionComponent<ITicketDetailCardProps> = (props) => {
   const { lockScroll } = useHandleScroll()
 
   const handleOpenModal = () => {
-    lockScroll()
-    setIsModalOpen?.((prev: boolean) => !prev)
+    if (mobile) {
+      lockScroll()
+      setIsModalOpen?.((prev: boolean) => !prev)
+    }
   }
 
   const planeFinancialDetails = ptcFareBreakdown[0]

@@ -9,7 +9,7 @@ import GeneralDescriptions from '../GeneralDescriptions/GeneralDescriptions'
 import { useDiscriptiveWindowSize } from '../../../hooks/useDiscriptiveWindowSize'
 import Modal from '../Modal/Modal'
 import MobileActionFooter from '../MobileActionFooter/MobileActionFooter'
-import DetailContext from '../../../contexts/ShitContext/DetailContext'
+import DetailContext from '../../../contexts/DetailContext/DetailContext'
 
 interface IFlightCardProps extends HTMLAttributes<Element> {
   className?: string

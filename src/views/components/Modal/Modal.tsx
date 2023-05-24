@@ -21,7 +21,7 @@ const Modal: FunctionComponent<IModalProps> = (props) => {
     <div className='fixed bg-white z-10 w-full h-full overflow-y-auto overflow-x-hidden top-0 left-0'>
       <header className='flex justify-between p-3'>
         <Text>جزئیات پرواز</Text>
-        <XMarkIcon onClick={handleCloseModal} width='24px' />
+        <XMarkIcon className='cursor-pointer' onClick={handleCloseModal} width='24px' />
       </header>
       {children}
     </div>

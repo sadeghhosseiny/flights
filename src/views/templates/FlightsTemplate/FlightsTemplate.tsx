@@ -56,7 +56,7 @@ const FlightsTemplate: FunctionComponent<IFlightsTemplate> = () => {
           </select>
         </div>
         <>
-          <div className='grid grid-flow-col'>
+          <div className='grid grid-flow-row sm:grid-flow-col'>
             <div className='col-span-3 py-4 h-full'>
               <SideBar />
             </div>

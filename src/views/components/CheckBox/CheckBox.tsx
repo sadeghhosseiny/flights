@@ -3,12 +3,13 @@ import { twMerge } from 'tailwind-merge'
 
 interface ICheckBoxProps extends HTMLAttributes<Element> {
   type?: string
+  name?: string
   component?: ElementType
   disabled?: boolean
 }
 
 const CheckBox: FunctionComponent<ICheckBoxProps> = (props) => {
-  const { component = 'input', className, type, ...otherProps } = props
+  const { component = 'input', className, type, name, ...otherProps } = props
   const { disabled } = otherProps
 
   const defaultStyle = twMerge(
@@ -23,6 +24,7 @@ const CheckBox: FunctionComponent<ICheckBoxProps> = (props) => {
   return createElement(component, {
     className: twMerge(defaultStyle, className),
     type,
+    name,
     ...otherProps,
   })
 }

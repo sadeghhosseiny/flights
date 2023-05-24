@@ -5,7 +5,25 @@ import * as flightsActions from './Action'
 
 export const flightsInitialState: types.flightsStateTypes = {
   rawFlights: {},
-  changableFlights: {}
+  changableFlights: {},
+  filters: {
+    checkbox: { icharter: true },
+  },
+}
+
+const applyFilterOnItem = (item: any, key: any, value: any): boolean => {
+  switch (key) {
+    case 'isCharter': {
+      return item.isCharter === value
+    }
+
+    case 'isSystem': {
+      return item.isSystem === value
+    }
+
+    default:
+      return false
+  }
 }
 
 export const flightsReducer = (
@@ -17,43 +35,78 @@ export const flightsReducer = (
     case constants.LOAD_FLIGHTS_DATA: {
       const data = {
         ...state,
-        changableFlights:{ ...action.payload.data},
-        rawFlights:{ ...action.payload.data}
+        changableFlights: { ...action.payload.data },
+        rawFlights: { ...action.payload.data },
       }
       return data
     }
     case constants.SORT_BY_PRICE: {
-      const tempFlights:any = state.rawFlights
+      const tempFlights: any = state.rawFlights
 
-      tempFlights.pricedItineraries.sort((a:any, b:any) => a.airItineraryPricingInfo.itinTotalFare.totalFare - b.airItineraryPricingInfo.itinTotalFare.totalFare)
+      tempFlights.pricedItineraries.sort(
+        (a: any, b: any) =>
+          a.airItineraryPricingInfo.itinTotalFare.totalFare -
+          b.airItineraryPricingInfo.itinTotalFare.totalFare,
+      )
 
-      return {rawFlights: tempFlights}
+      return { rawFlights: tempFlights }
     }
     case constants.SORT_BY_FLIGHTTIME: {
-      const tempFlights:any = state.rawFlights
+      const tempFlights: any = state.rawFlights
 
-      tempFlights.pricedItineraries.sort((a:any, b:any) => Date.parse(a.originDestinationOptions[0].flightSegments[0].departureDateTime) - Date.parse(b.originDestinationOptions[0].flightSegments[0].departureDateTime))
+      tempFlights.pricedItineraries.sort(
+        (a: any, b: any) =>
+          Date.parse(a.originDestinationOptions[0].flightSegments[0].departureDateTime) -
+          Date.parse(b.originDestinationOptions[0].flightSegments[0].departureDateTime),
+      )
 
-      return {rawFlights: tempFlights}
+      return { rawFlights: tempFlights }
     }
     case constants.HANDLE_CHARTER_FLIGHTS: {
-      const tempFlights:any = state.rawFlights
-      const {check} = action.payload
-      if (check) {
-        return {...state, changableFlights: {
-          ...state.rawFlights,
-          pricedItineraries: tempFlights.pricedItineraries.filter((item:any) => item.isCharter === true)} }
-        } else {
-          return {
-            ...state,
-            changableFlights: {
-              ...state.rawFlights
-            }
-          }
+      const { type, obj } = action.payload
+
+      if (Object.keys(state.filters).includes(type)) {
+        state.filters[type] = {
+          ...state.filters[type],
+          ...obj,
         }
-    
+      } else {
+        state.filters = {
+          [type]: { ...obj },
+        }
+      }
+
+      const temp = state.rawFlights
+
+      let filtered = []
+
+      filtered = temp.pricedItineraries.filter(
+        (item: any) =>
+          !Object.entries(state.filters).find((type: any, value: any) =>
+            Object.entries(state.filters[type[0]]).find((key: any, value: any) => {
+              return !applyFilterOnItem(item, key[0], key[1])
+            }),
+          ),
+      )
+
+      if (Object.values(state.filters[type]).every((value) => value === false)) {
+        return {
+          ...state,
+          changableFlights: {
+            ...state.rawFlights,
+          },
+        }
+      } else {
+        return {
+          ...state,
+          changableFlights: {
+            ...state.rawFlights,
+            pricedItineraries: filtered,
+          },
+        }
+      }
     }
-    
+
     default:
       return state
   }

@@ -13,6 +13,6 @@ export const sortFlightsBasedOnDate = () => (dispatch: types.flightsDispatchType
   return dispatch({type: constants.SORT_BY_FLIGHTTIME })
 }
 
-export const filterCharterFlights = (check: boolean) => (dispatch: types.flightsDispatchType) => {
-  return dispatch({type: constants.HANDLE_CHARTER_FLIGHTS, payload: {check} })
+export const filterCharterFlights = (type: string, obj: any) => (dispatch: types.flightsDispatchType) => {
+  return dispatch({type: constants.HANDLE_CHARTER_FLIGHTS, payload: {type, obj} })
 }
