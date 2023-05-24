@@ -6,9 +6,7 @@ import * as flightsActions from './Action'
 export const flightsInitialState: types.flightsStateTypes = {
   rawFlights: {},
   changableFlights: {},
-  filters: {
-    checkbox: { icharter: true },
-  },
+  filters: {},
 }
 
 const applyFilterOnItem = (item: any, key: any, value: any): boolean => {
@@ -21,6 +19,12 @@ const applyFilterOnItem = (item: any, key: any, value: any): boolean => {
       return item.isSystem === value
     }
 
+    case 'totalFare': {
+      return (
+        value.from < item.airItineraryPricingInfo.itinTotalFare.totalFare / 10 &&
+        item.airItineraryPricingInfo.itinTotalFare.totalFare / 10 < value.to
+      )
+    }
     default:
       return false
   }
@@ -49,7 +53,7 @@ export const flightsReducer = (
           b.airItineraryPricingInfo.itinTotalFare.totalFare,
       )
 
-      return { rawFlights: tempFlights }
+      return { ...state, changableFlights: tempFlights }
     }
     case constants.SORT_BY_FLIGHTTIME: {
       const tempFlights: any = state.rawFlights
@@ -60,9 +64,9 @@ export const flightsReducer = (
           Date.parse(b.originDestinationOptions[0].flightSegments[0].departureDateTime),
       )
 
-      return { rawFlights: tempFlights }
+      return { ...state, changableFlights: tempFlights }
     }
-    case constants.HANDLE_CHARTER_FLIGHTS: {
+    case constants.HANDLE_FILTERS: {
       const { type, obj } = action.payload
 
       if (Object.keys(state.filters).includes(type)) {
@@ -82,8 +86,8 @@ export const flightsReducer = (
 
       filtered = temp.pricedItineraries.filter(
         (item: any) =>
-          !Object.entries(state.filters).find((type: any, value: any) =>
-            Object.entries(state.filters[type[0]]).find((key: any, value: any) => {
+          !Object.entries(state.filters).find((type: any) =>
+            Object.entries(state.filters[type[0]]).find((key: any) => {
               return !applyFilterOnItem(item, key[0], key[1])
             }),
           ),

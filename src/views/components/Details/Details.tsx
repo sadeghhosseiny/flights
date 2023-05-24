@@ -12,7 +12,7 @@ interface IDetailsProps extends HTMLAttributes<Element> {
   className?: string
 }
 
-const Details: FunctionComponent<IDetailsProps> = (props) => {
+const Details: FunctionComponent<IDetailsProps> = () => {
   const { sourceCity, arrivalCity, flightSegments, airItineraryPricingInfo, isSystem } =
     useDetailContext()
 

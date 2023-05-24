@@ -4,6 +4,8 @@ import { twMerge } from 'tailwind-merge'
 interface ICheckBoxProps extends HTMLAttributes<Element> {
   type?: string
   name?: string
+  min?: number
+  max?: number
   component?: ElementType
   disabled?: boolean
 }
