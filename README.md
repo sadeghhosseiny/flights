@@ -5,6 +5,8 @@ we should use this data to show the flights with thier details in the webpage.
 we should sort the flights based on the cost and date.
 we should apply two filter in the data.
 
+we use tailwind for styles and use context for state management
+
 ## Available Scripts
 
 In the project directory, you can run:
